@@ -10,7 +10,7 @@ class A11ysentry < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/mbiondo/a11ysentry/releases/download/v0.0.6/a11ysentry_darwin_amd64.tar.gz"
-      sha256 "28669103baa4c55b56341e0be8726c797a86b6d849e75d22956dffa7944cfc25"
+      sha256 "c1013c07b3ee8d8abc79d70d23146001b0d3727009cbedcf47432735efed3a1c"
 
       define_method(:install) do
         bin.install "a11ysentry"
@@ -18,7 +18,7 @@ class A11ysentry < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/mbiondo/a11ysentry/releases/download/v0.0.6/a11ysentry_darwin_arm64.tar.gz"
-      sha256 "3d1d57312ab1c3c20bd05044726567214cd791373a7044d43dbda6cf4e54ff5f"
+      sha256 "cf09790c49027efbb46f0215e5a8b8bae2f20688418c8e4c7b2fb141ca9e50dc"
 
       define_method(:install) do
         bin.install "a11ysentry"
@@ -29,14 +29,14 @@ class A11ysentry < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/mbiondo/a11ysentry/releases/download/v0.0.6/a11ysentry_linux_amd64.tar.gz"
-      sha256 "8dc0db46552aeb479ccc6831f8281b73fa673bc5f700d4f53eb2c18604e14f20"
+      sha256 "29e68d18d35e93acc5d48b471d4d8ec001fb399bc3d91dfd7ebd47f1de99b40e"
       define_method(:install) do
         bin.install "a11ysentry"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/mbiondo/a11ysentry/releases/download/v0.0.6/a11ysentry_linux_arm64.tar.gz"
-      sha256 "84b4f1b2a65e5f458f6131f0babb7e941784b1cf60719591dc3d3d0b56aa2a80"
+      sha256 "993b968a1f51790bcaad71ac43818291b0b84f1846c2b30726ca81eba079bbbe"
       define_method(:install) do
         bin.install "a11ysentry"
       end
