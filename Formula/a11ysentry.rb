@@ -5,20 +5,20 @@
 class A11ysentry < Formula
   desc "Universal multi-platform accessibility engine with TUI and MCP support."
   homepage "https://github.com/mbiondo/a11ysentry"
-  version "0.1.2"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mbiondo/a11ysentry/releases/download/v0.1.2/a11ysentry_darwin_amd64.tar.gz"
-      sha256 "e7f69fc4c6036251867d25b76856f229dbbad18f21f350eaaff1a91147848409"
+      url "https://github.com/mbiondo/a11ysentry/releases/download/v0.2.0/a11ysentry_darwin_amd64.tar.gz"
+      sha256 "944b1ff143b398f78a40125b819f3d917476e59e6e16d378941960bd10458e40"
 
       define_method(:install) do
         bin.install "a11ysentry"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mbiondo/a11ysentry/releases/download/v0.1.2/a11ysentry_darwin_arm64.tar.gz"
-      sha256 "1ba5fe94f567352e40bf038f0d7a3207972e1ae9d536a0218b75f37aa48c93c4"
+      url "https://github.com/mbiondo/a11ysentry/releases/download/v0.2.0/a11ysentry_darwin_arm64.tar.gz"
+      sha256 "8d73f0915970a3a3775b8be2dafeaadfac59eecf678ff670fb13b7f67a7d0ca4"
 
       define_method(:install) do
         bin.install "a11ysentry"
@@ -28,15 +28,15 @@ class A11ysentry < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mbiondo/a11ysentry/releases/download/v0.1.2/a11ysentry_linux_amd64.tar.gz"
-      sha256 "739e35b0d4a6327342e6016843aa699044218bf8063a0afe177f7e97786927f3"
+      url "https://github.com/mbiondo/a11ysentry/releases/download/v0.2.0/a11ysentry_linux_amd64.tar.gz"
+      sha256 "ceb4fc1e1c6654db72500687fd43535113fd765c972b8f8a1001cd46c1d35fb9"
       define_method(:install) do
         bin.install "a11ysentry"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mbiondo/a11ysentry/releases/download/v0.1.2/a11ysentry_linux_arm64.tar.gz"
-      sha256 "0ae684380a75f76b6f60e823fc07cfb549b51e8e621356511d5d51e405bfd268"
+      url "https://github.com/mbiondo/a11ysentry/releases/download/v0.2.0/a11ysentry_linux_arm64.tar.gz"
+      sha256 "778d6b1b273a65e0768ef573b26318779176d8beab4ad05653034e215b8680d8"
       define_method(:install) do
         bin.install "a11ysentry"
       end
